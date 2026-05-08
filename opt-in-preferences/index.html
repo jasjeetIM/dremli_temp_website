@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dremli | Opt-In Preferences</title>
+    <meta
+      name="description"
+      content="Dremli public booking forms let patients opt in to email and SMS updates before submitting an intake or appointment request."
+    />
+    <meta property="og:title" content="Dremli | Opt-In Preferences" />
+    <meta
+      property="og:description"
+      content="Public booking consent preferences for patient email and SMS updates."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dremli.com/opt-in-preferences" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="wordmark" href="/" aria-label="Dremli home">
+        <img class="wordmark-logo" src="/dremli_logo.png" alt="Dremli" />
+      </a>
+      <nav class="nav" aria-label="Site navigation">
+        <a href="/">Home</a>
+        <a href="/#workflow">Workflow</a>
+        <a href="/#workspace">Workspace</a>
+      </nav>
+      <a class="button button-primary button-small" href="mailto:contact@dremli.com?subject=Book%20a%20Dremli%20demo">Book a demo</a>
+    </header>
+
+    <main class="page proof-page">
+      <section class="proof-hero">
+        <div class="section-header">
+          <p class="eyebrow">Opt-in preferences</p>
+          <h1>Patients choose whether to receive SMS and email updates.</h1>
+          <p>
+            Dremli public booking and intake forms present communication consent before
+            the patient submits a request. Email and SMS preferences are separate, optional,
+            and off by default.
+          </p>
+        </div>
+        <div class="consent-preview" aria-label="Example public booking consent section">
+          <div class="consent-browser-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="consent-card">
+            <p class="panel-title">Patient intake</p>
+            <h2>Communication preferences</h2>
+            <p>
+              By selecting SMS updates, I agree to receive appointment and intake updates
+              by text from the dental practice using Dremli. Message frequency varies.
+              Message and data rates may apply. Reply STOP to opt out or HELP for help.
+            </p>
+            <div class="consent-options">
+              <label>
+                <input type="checkbox" />
+                <span>Email updates</span>
+              </label>
+              <label>
+                <input type="checkbox" />
+                <span>SMS updates</span>
+              </label>
+            </div>
+            <button type="button" class="button button-primary consent-button">Review request</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section proof-section">
+        <div class="section-header">
+          <p class="eyebrow">How it works</p>
+          <h2>Consent is collected as part of the public booking submit flow.</h2>
+          <p>
+            The intake form displays the practice's consent text immediately above the
+            patient preference controls. When the patient submits the request, Dremli
+            sends the selected preferences with the appointment request.
+          </p>
+        </div>
+        <div class="module-grid">
+          <article class="module-card">
+            <span>01</span>
+            <h3>Separate choices</h3>
+            <p>Email and SMS updates are shown as independent checkboxes so patients can choose either channel, both, or neither.</p>
+          </article>
+          <article class="module-card">
+            <span>02</span>
+            <h3>Off by default</h3>
+            <p>The public booking flow initializes both communication preferences as false until the patient selects them.</p>
+          </article>
+          <article class="module-card">
+            <span>03</span>
+            <h3>Submitted with intake</h3>
+            <p>The backend receives channel-specific consent fields with the public booking request for audit and follow-up handling.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section split-section proof-section">
+        <div class="section-header">
+          <p class="eyebrow">Implementation reference</p>
+          <h2>The submitted request stores channel-specific consent.</h2>
+          <p>
+            Dremli's public booking request includes dedicated values for email and SMS
+            communication consent. These values are not inferred from contact details.
+          </p>
+        </div>
+        <div class="resource-list">
+          <span>communicationConsentEmail: true or false</span>
+          <span>communicationConsentSms: true or false</span>
+          <span>Consent text appears before the opt-in controls</span>
+          <span>Patient phone and email remain separate required intake fields</span>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <span>Dremli</span>
+        <span class="footer-links">
+          <span>Dental patient intake and engagement</span>
+          <a href="/opt-in-preferences/">Opt-In Preferences</a>
+        </span>
+      </footer>
+    </main>
+  </body>
+</html>
