@@ -18,194 +18,216 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="page">
-      <header class="masthead">
-        <a class="wordmark" href="/" aria-label="Dremli home">
-          <img class="wordmark-logo" src="/dremli_logo.png" alt="Dremli" />
-        </a>
-        <nav class="nav" aria-label="Site navigation">
-          <a href="#mission">Scope</a>
-          <a href="#automation">Workflow</a>
-          <a href="#why">Why Dremli</a>
-        </nav>
-        <a class="button button-primary button-small" href="mailto:contact@dremli.com?subject=Book%20a%20Dremli%20demo">Book a demo</a>
-      </header>
+    <header class="topbar">
+      <a class="wordmark" href="/" aria-label="Dremli home">
+        <img class="wordmark-logo" src="/dremli_logo.png" alt="Dremli" />
+      </a>
+      <nav class="nav" aria-label="Site navigation">
+        <a href="#overview">Overview</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#workspace">Workspace</a>
+        <a href="#security">Security</a>
+      </nav>
+      <a class="button button-primary button-small" href="mailto:contact@dremli.com?subject=Book%20a%20Dremli%20demo">Book a demo</a>
+    </header>
 
+    <main class="page">
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Dental patient intake and engagement</p>
-          <h1>Make every dental visit easier to schedule, prepare, and follow up.</h1>
+          <p class="eyebrow">Patient engagement for dental teams</p>
+          <h1>One workspace for booking, intake, and patient follow-up.</h1>
           <p class="hero-body">
-            Dremli brings appointment scheduling, digital forms, plus SMS and
-            email communication into one workspace. Dental teams can fill the
-            schedule, collect the right patient details, and follow up with the
-            context they need.
+            Dremli gives dental teams a focused front-office workspace for online scheduling,
+            forms, attachments, SMS, email, and patient context before every visit.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="mailto:contact@dremli.com?subject=Book%20a%20Dremli%20demo">Book a demo</a>
-            <a class="button button-secondary" href="#automation">See the workflow</a>
+            <a class="button button-secondary" href="#workspace">Explore the workspace</a>
           </div>
-          <ul class="proof-list" aria-label="Front-office workflows Dremli supports">
-            <li>Online scheduling</li>
-            <li>Digital intake</li>
-            <li>SMS and email</li>
-            <li>Patient activity</li>
-          </ul>
+          <div class="quick-links" aria-label="Core Dremli workflows">
+            <a href="#workflow">Online scheduling</a>
+            <a href="#workflow">Digital intake</a>
+            <a href="#workspace">Patient activity</a>
+            <a href="#security">PMS-aware workflows</a>
+          </div>
         </div>
 
-        <div class="product-preview" aria-label="Dremli workspace preview">
-          <div class="preview-topbar">
-            <span>Dremli workspace</span>
-            <strong>Patient engagement live</strong>
+        <div class="workspace-preview" id="workspace" aria-label="Dremli workspace preview">
+          <div class="workspace-sidebar">
+            <div class="workspace-brand">Dremli</div>
+            <span class="workspace-link workspace-link-active">Home</span>
+            <span class="workspace-link">Patients</span>
+            <span class="workspace-link">Appointments</span>
+            <span class="workspace-link">Forms</span>
           </div>
-          <div class="preview-metrics">
+          <div class="workspace-main">
+            <div class="workspace-header">
+              <div>
+                <span>Home</span>
+                <strong>Patient engagement live</strong>
+              </div>
+              <span class="workspace-pill">Ready</span>
+            </div>
+            <div class="metric-grid">
+              <div class="metric-card">
+                <span>Forms filled</span>
+                <strong>24</strong>
+              </div>
+              <div class="metric-card">
+                <span>Appointments scheduled</span>
+                <strong>18</strong>
+              </div>
+              <div class="metric-card">
+                <span>Claims filed</span>
+                <strong>31</strong>
+              </div>
+            </div>
+            <div class="workspace-content">
+              <div class="activity-panel">
+                <div class="panel-title">Activity</div>
+                <div class="activity-row">
+                  <span>Website booking received</span>
+                  <strong>New</strong>
+                </div>
+                <div class="activity-row">
+                  <span>Intake form submitted</span>
+                  <strong>Review</strong>
+                </div>
+                <div class="activity-row activity-row-active">
+                  <span>SMS reply received</span>
+                  <strong>Reply</strong>
+                </div>
+                <div class="activity-row">
+                  <span>Attachment sent to office</span>
+                  <strong>File</strong>
+                </div>
+              </div>
+              <div class="patient-panel">
+                <div class="panel-title">Patient context</div>
+                <div class="patient-name">Mia Chen</div>
+                <div class="patient-meta">Prophy Appointment · Tomorrow</div>
+                <div class="status-stack">
+                  <span>Next appointment visible</span>
+                  <span>Form answers attached</span>
+                  <span>Message history in view</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="docs-shell">
+        <aside class="side-rail" aria-label="Page sections">
+          <span>On this page</span>
+          <a href="#overview">Overview</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#workspace-details">Workspace</a>
+          <a href="#security">Security</a>
+          <a href="#demo">Demo</a>
+        </aside>
+
+        <div class="content-stack">
+          <section id="overview" class="section">
+            <div class="section-header">
+              <p class="eyebrow">Overview</p>
+              <h2>Front-office work, connected around the patient.</h2>
+              <p>
+                Dremli stays focused on the work around a visit: scheduling, intake,
+                communication, attachments, and staff review. The workspace keeps context
+                close so teams can act without toggling between disconnected tools.
+              </p>
+            </div>
+            <div class="module-grid">
+              <article class="module-card">
+                <span>01</span>
+                <h3>Book the visit</h3>
+                <p>Patients choose a visit type, provider, and available time from a practice-branded public form.</p>
+              </article>
+              <article class="module-card">
+                <span>02</span>
+                <h3>Collect the details</h3>
+                <p>Digital intake captures demographics, visit notes, attachments, consent, and configurable fields.</p>
+              </article>
+              <article class="module-card">
+                <span>03</span>
+                <h3>Follow up clearly</h3>
+                <p>Staff can send SMS or email from the same patient context used for forms and appointments.</p>
+              </article>
+            </div>
+          </section>
+
+          <section id="workflow" class="section">
+            <div class="section-header">
+              <p class="eyebrow">Workflow</p>
+              <h2>Designed around the repeatable path from request to visit.</h2>
+              <p>
+                Dremli makes the journey easy to follow by exposing each operational step from
+                the first request through visit readiness and patient follow-up.
+              </p>
+            </div>
+            <ol class="workflow-list" aria-label="Dremli workflow">
+              <li><span>1</span>Online booking</li>
+              <li><span>2</span>Appointment scheduling</li>
+              <li><span>3</span>Digital intake</li>
+              <li><span>4</span>Attachments and consent</li>
+              <li><span>5</span>SMS and email</li>
+              <li><span>6</span>Visit readiness</li>
+              <li><span>7</span>Patient follow-up</li>
+            </ol>
+          </section>
+
+          <section id="workspace-details" class="section split-section">
+            <div class="section-header">
+              <p class="eyebrow">Workspace</p>
+              <h2>Home, Patients, Appointments, and Forms share the same context.</h2>
+              <p>
+                The product surfaces the operational state staff need: what was scheduled,
+                which forms were filled, what needs review, and how to reach the patient.
+              </p>
+            </div>
+            <div class="resource-list">
+              <a href="#workspace">Home activity feed for bookings, forms, messages, and follow-up</a>
+              <a href="#workspace">Patient profiles with appointments, attachments, SMS, and email history</a>
+              <a href="#workspace">Appointment workspace for readiness, missing items, and schedule context</a>
+              <a href="#workspace">Forms workspace for booking links, intake fields, policies, and reminders</a>
+            </div>
+          </section>
+
+          <section id="security" class="section info-band">
             <div>
-              <span>Appointments scheduled</span>
-              <strong>18</strong>
+              <p class="eyebrow">PMS-aware</p>
+              <h2>Built to fit the systems dental teams already rely on.</h2>
             </div>
+            <div class="info-grid">
+              <div>
+                <span>Connector-aware</span>
+                <p>Designed for PMS-backed availability, appointment writeback, and patient context.</p>
+              </div>
+              <div>
+                <span>Communication-ready</span>
+                <p>SMS and email use a durable outbox so staff actions can be tracked and dispatched reliably.</p>
+              </div>
+              <div>
+                <span>Scoped by design</span>
+                <p>Focused on patient engagement workflows rather than replacing the clinical or billing system.</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="demo" class="contact-band">
             <div>
-              <span>Forms to review</span>
-              <strong>2</strong>
+              <p class="eyebrow">Get started</p>
+              <h2>Review the patient engagement workspace with us.</h2>
+              <p>
+                Share your scheduling process, intake packet, communication channels, and patient
+                follow-up routine. We will show how Dremli simplifies the work around the visit.
+              </p>
             </div>
-            <div>
-              <span>Messages today</span>
-              <strong>14</strong>
-            </div>
-          </div>
-          <div class="preview-columns">
-            <div class="preview-panel">
-              <span class="preview-label">Activity</span>
-              <div class="preview-row">
-                <span>Website booking received</span>
-                <strong>New</strong>
-              </div>
-              <div class="preview-row">
-                <span>Intake form submitted</span>
-                <strong>Review</strong>
-              </div>
-              <div class="preview-row preview-row-active">
-                <span>SMS reply received</span>
-                <strong>Reply</strong>
-              </div>
-            </div>
-            <div class="preview-panel">
-              <span class="preview-label">Patient context</span>
-              <div class="readiness-score">
-                <span>Visit readiness</span>
-                <strong>94%</strong>
-              </div>
-              <div class="preview-checklist">
-                <span>Next appointment visible</span>
-                <span>Form answers attached</span>
-                <span>Message history in view</span>
-              </div>
-            </div>
-          </div>
+            <a class="button button-primary" href="mailto:contact@dremli.com?subject=Book%20a%20Dremli%20demo">Book a demo</a>
+          </section>
         </div>
-      </section>
-
-      <section id="mission" class="section">
-        <div class="section-header">
-          <p class="eyebrow">Scope</p>
-          <h2>One workspace for the front-office patient journey.</h2>
-          <p>
-            Dremli supports the operational work around the visit: scheduling,
-            intake, reminders, patient messages, attachments, and staff review.
-            It stays focused on patient access and engagement, not billing,
-            insurance operations, payments, or clinical record ownership.
-          </p>
-        </div>
-        <div class="pillar-grid">
-          <article class="pillar-card">
-            <h3>Customer</h3>
-            <p>
-              Dental practices that want a cleaner patient experience without
-              making the front desk reconcile multiple separate tools.
-            </p>
-          </article>
-          <article class="pillar-card">
-            <h3>Problem</h3>
-            <p>
-              Scheduling, forms, texts, emails, attachments, and patient history
-              often live in different places, so every follow-up starts with
-              rebuilding context.
-            </p>
-          </article>
-          <article class="pillar-card">
-            <h3>Solution</h3>
-            <p>
-              Dremli connects online scheduling, configurable intake, patient
-              activity, and SMS and email follow-up into a practical workspace.
-            </p>
-          </article>
-          <article class="pillar-card">
-            <h3>Outcome</h3>
-            <p>
-              Patients get a smoother path to care, and staff know what is
-              scheduled, what is missing, and who needs a response.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="automation" class="section workflow-section">
-        <div class="section-header">
-          <p class="eyebrow">Workflow</p>
-          <h2>How Dremli supports the patient journey.</h2>
-          <p>
-            The platform is built around the work dental teams repeat every day:
-            help patients book, collect intake, track readiness, communicate
-            clearly, and keep the patient record easy to act on.
-          </p>
-        </div>
-        <ol class="workflow-list" aria-label="Dremli workflow">
-          <li>Online booking</li>
-          <li>Appointment scheduling</li>
-          <li>Digital intake</li>
-          <li>Attachments and consent</li>
-          <li>SMS and email</li>
-          <li>Visit readiness</li>
-          <li>Patient follow-up</li>
-        </ol>
-        <p class="workflow-summary">
-          Home, Patients, Appointments, and Forms all share the same patient
-          context, so staff can move from an activity item to the appointment,
-          form submission, message history, or patient record without rebuilding
-          the story.
-        </p>
-      </section>
-
-      <section id="why" class="section split-section">
-        <div class="section-header">
-          <p class="eyebrow">Why Dremli</p>
-          <h2>Broad enough for engagement, focused enough for daily use.</h2>
-          <p>
-            Dremli is intentionally centered on the front-office patient
-            experience. It gives teams useful scheduling, communication, and
-            intake workflows without drifting into every system a practice
-            already owns.
-          </p>
-        </div>
-        <ul class="why-list">
-          <li>Home activity feed for bookings, forms, messages, and follow-up</li>
-          <li>Appointment workspace for readiness, missing items, and schedule context</li>
-          <li>Forms workspace for booking links, intake fields, policies, and reminders</li>
-          <li>Patient profiles with appointments, attachments, SMS, and email history</li>
-        </ul>
-      </section>
-
-      <section class="contact-band">
-        <div>
-          <p class="eyebrow">Get started</p>
-          <h2>Review the patient engagement workspace with us.</h2>
-          <p>
-            Share your scheduling process, intake packet, communication channels,
-            and patient follow-up routine. We will show how Dremli simplifies the
-            work around the visit without replacing your core systems.
-          </p>
-        </div>
-        <a class="button button-primary" href="mailto:contact@dremli.com?subject=Book%20a%20Dremli%20demo">Book a demo</a>
-      </section>
+      </div>
 
       <footer class="footer">
         <span>Dremli</span>
